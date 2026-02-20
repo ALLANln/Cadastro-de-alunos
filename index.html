@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de alunos</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Sistema de cadastro de alunos</h1>
+
+    <input type="text" placeholder="Nome do aluno" id="nome">
+    <input type="number" placeholder="Nota" id="nota">
+
+    <br>
+
+    <div class="botoes">
+      <button onclick="cadastrar()" class="cadastrar"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Cadastrar</button>
+
+      <button onclick="listar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>Listar</button>
+
+      <button onclick="media()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M40-160v-240h120v240H40Zm190 0v-320h120v320H230Zm190 0v-440h120v440H420Zm190 0v-520h120v520H610Zm190 0v-640h120v640H800Z"/></svg>Média</button>
+
+      <button onclick="aprovados()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Aprovados</button>
+    </div>
+
+
+    <br>
+
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
